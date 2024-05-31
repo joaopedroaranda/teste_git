@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_pagamento.css">
+    <title>Esay Rent</title>
+</head>
+<body>
+    <button class="back-button" onclick="history.back()">
+        Voltar
+    </button>
+    <div class="container">
+        <div class="form">
+            <form action="save-payment">
+                <div class="title">
+                    <h1>Forma de Pagamento</h1>
+                </div>
+                <div class="checkbox-group">
+                    <div class="input-box">
+                        <label for="selected-debit">Cartão de Debito</label>
+                        <input id="selected-debit" type="checkbox" name="selected-debit">
+                    </div>
+                    <div class="input-box">
+                        <label for="selected-credit">Cartão de Credito</label>
+                        <input id="selected-credit" type="checkbox" name="selected-credit">
+                    </div>
+                    <div class="input-box">
+                        <label for="selected-pix">Pix</label>
+                        <input id="selected-pix" type="checkbox" name="selected-pix">
+                    </div>
+                    <div class="input-box">
+                        <label for="selected-money">Dinheiro</label>
+                        <input id="selected-money" type="checkbox" name="selected-money">
+                    </div>
+                </div>
+
+                <div class="button-save-pagamento">
+                    <button><a href="#">Finalizar</a></button>
+                </div>
+            </form>
+        </div>
+    </div> 
+</body>
+</html>
