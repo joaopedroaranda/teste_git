@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        const nameIsValid = /^[a-zA-Z\s]+$/.test(nameComplete);
+        // Expressão regular para permitir letras, espaços e acentos
+        const nameIsValid = /^[a-zA-ZÀ-ú\s]+$/.test(nameComplete);
 
         if (allFieldsFilled && nameIsValid && cpf.length === 14 && phone.length === 15) {
             window.location.href = 'pagamento.html';
