@@ -3,13 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
-    <link rel="stylesheet" href="style_cadastro.css">
-    <title>Esay Rent</title>
+    <link rel="stylesheet" href="css/style_cadastro.css">
+    <title>Easy Rent</title>
 </head>
 <body>
+    <button class="back-button" onclick="history.back()">
+        Voltar
+    </button>
     <div class="container">
         <div class="form-image">
-            <img src="undraw_shopping_re_hdd9.svg" alt="">
+            <img src="img/undraw_shopping_re_hdd9.svg" alt="">
         </div>
         <div class="form">
             <form id="cadastro-form" action="save-dados">
@@ -53,15 +56,13 @@
                 </div>
 
                 <div class="button-save-cadastro">
-                    <button type="button" id="continuar-button"><a href="pagamento">Continuar</a></button>
+                    <button type="button" id="continuar-button">Continuar</button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="script_cadastro.js"></script>
 
+    <script src="scripts/script_form.js"></script>
+    <script src="scripts/script_cadastro.js"></script>
 </body>
 </html>
-
-
-
